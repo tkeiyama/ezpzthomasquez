@@ -12,6 +12,9 @@
     "moduleResolution": "bundler",
     "module": "esnext",
     "noEmit": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "rootDirs": [
+      "."
+    ]
   }
 }
