@@ -2,5 +2,5 @@
  * @type {import('lint-staged').Configuration}
  */
 export default {
-  '*': 'echo "ezpzthomasquez"'
-}
+  "*.{js,ts,tsx,json,md,yaml}": ["pnpm lint", "pnpm format"],
+};
