@@ -10,7 +10,8 @@
     ".pnpm-store",
     ".react-router",
     "build",
-    "node_modules"
+    "node_modules",
+    "pnpm-lock.yaml"
   ],
   "plugins": [
     "https://plugins.dprint.dev/typescript-0.95.11.wasm",
