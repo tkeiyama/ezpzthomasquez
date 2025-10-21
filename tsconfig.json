@@ -10,6 +10,7 @@
     "jsx": "react-jsx",
     "moduleResolution": "bundler",
     "module": "esnext",
-    "noEmit": true
+    "noEmit": true,
+    "skipLibCheck": true
   }
 }
