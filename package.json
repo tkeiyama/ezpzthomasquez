@@ -1,3 +1,6 @@
 {
-  "name": "ezpzthomasquez"
+  "name": "ezpzthomasquez",
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
 }
