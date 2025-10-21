@@ -6,7 +6,9 @@
   "malva": {},
   "markup": {},
   "yaml": {},
-  "excludes": [],
+  "excludes": [
+    ".pnpm-store"
+  ],
   "plugins": [
     "https://plugins.dprint.dev/typescript-0.95.11.wasm",
     "https://plugins.dprint.dev/json-0.21.0.wasm",
