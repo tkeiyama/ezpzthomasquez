@@ -9,7 +9,7 @@ export const links: Route.LinksFunction = () => [
 ]
 
 export default function R() {
-  return <html>
+  return <html lang="en">
     <head>
       <Links />
     </head>
