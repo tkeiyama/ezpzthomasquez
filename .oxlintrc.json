@@ -153,6 +153,7 @@
   "ignorePatterns": [
     ".pnpm-store",
     ".react-router",
-    "build"
+    "build",
+    "node_modules"
   ]
 }
