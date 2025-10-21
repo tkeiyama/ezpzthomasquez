@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "dev:app": "react-router dev",
+    "dev:type-css-modules": "tcm app --watch",
     "build": "react-router build",
     "serve": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
