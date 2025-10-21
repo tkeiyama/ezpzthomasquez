@@ -6,6 +6,7 @@
     "build": "react-router build",
     "serve": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
+    "fix": "pnpm lint && pnpm format",
     "lint": "oxlint -c .oxlintrc.json --tsconfig ./tsconfig.json --fix --deny-warnings",
     "format": "dprint -c dprint.json fmt"
   },
