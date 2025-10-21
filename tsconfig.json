@@ -14,7 +14,8 @@
     "noEmit": true,
     "skipLibCheck": true,
     "rootDirs": [
-      "."
+      ".",
+      "./.react-router/types"
     ]
   }
 }
