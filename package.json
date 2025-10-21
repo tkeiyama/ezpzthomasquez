@@ -1,5 +1,6 @@
 {
   "name": "ezpzthomasquez",
+  "type": "module",
   "dependencies": {
     "@react-router/node": "7.9.4",
     "react": "19.2.0",
