@@ -9,3 +9,5 @@ COPY ./scripts ./scripts
 
 RUN sh ./scripts/install-nodejs.sh
 ENV PATH=$PATH:/usr/local/nodejs/bin
+
+RUN sh ./scripts/install-pnpm.sh
