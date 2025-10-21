@@ -1,5 +1,5 @@
-import { Config } from '@react-router/dev/config'
+import { Config } from "@react-router/dev/config";
 
 export default {
-  ssr: true
-} satisfies Config
+  ssr: true,
+} satisfies Config;

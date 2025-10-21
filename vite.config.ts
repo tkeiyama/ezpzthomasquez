@@ -1,9 +1,9 @@
-import { defineConfig } from 'vite'
-import { reactRouter } from '@react-router/dev/vite'
+import { reactRouter } from "@react-router/dev/vite";
+import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [reactRouter()],
   server: {
-    host: "0.0.0.0"
-  }
-})
+    host: "0.0.0.0",
+  },
+});

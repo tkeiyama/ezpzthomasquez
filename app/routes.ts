@@ -1,3 +1,3 @@
-import { RouteConfig } from '@react-router/dev/routes'
+import { RouteConfig } from "@react-router/dev/routes";
 
-export default [] satisfies RouteConfig
+export default [] satisfies RouteConfig;
