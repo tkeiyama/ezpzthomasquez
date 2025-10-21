@@ -9,7 +9,8 @@
     "fix": "pnpm lint && pnpm format",
     "lint": "oxlint -c .oxlintrc.json --tsconfig ./tsconfig.json --fix --deny-warnings",
     "format": "dprint -c dprint.json fmt",
-    "prepare": "husky"
+    "prepare": "husky",
+    "pre-commit": "lint-staged -c lint-staged.config.js"
   },
   "dependencies": {
     "@react-router/node": "7.9.4",
