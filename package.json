@@ -11,6 +11,7 @@
     "format": "dprint -c dprint.json fmt",
     "prepare": "husky",
     "pre-commit": "lint-staged -c lint-staged.config.js",
+    "generate": "pnpm run \"/^generate:.*/\"",
     "generate:type-css-modules": "tcm app"
   },
   "dependencies": {
