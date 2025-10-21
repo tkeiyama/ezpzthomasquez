@@ -6,7 +6,8 @@
     "build": "react-router build",
     "serve": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
-    "lint": "oxlint -c .oxlintrc.json --tsconfig ./tsconfig.json --fix --deny-warnings"
+    "lint": "oxlint -c .oxlintrc.json --tsconfig ./tsconfig.json --fix --deny-warnings",
+    "format": "dprint -c dprint.json fmt"
   },
   "dependencies": {
     "@react-router/node": "7.9.4",
