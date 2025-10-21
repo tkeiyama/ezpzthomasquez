@@ -9,6 +9,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "moduleResolution": "bundler",
-    "module": "esnext"
+    "module": "esnext",
+    "noEmit": true
   }
 }
