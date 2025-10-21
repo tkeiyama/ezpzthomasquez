@@ -152,6 +152,7 @@
   "globals": {},
   "ignorePatterns": [
     ".pnpm-store",
-    ".react-router"
+    ".react-router",
+    "build"
   ]
 }
