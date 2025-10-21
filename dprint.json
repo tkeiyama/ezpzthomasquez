@@ -9,7 +9,8 @@
   "excludes": [
     ".pnpm-store",
     ".react-router",
-    "build"
+    "build",
+    "node_modules"
   ],
   "plugins": [
     "https://plugins.dprint.dev/typescript-0.95.11.wasm",
