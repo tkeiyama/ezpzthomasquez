@@ -6,3 +6,5 @@ services:
     volumes:
       - ..:/workspace
     tty: true
+    environment:
+      - TZ=Asia/Tokyo
