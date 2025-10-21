@@ -2,7 +2,8 @@
   "name": "ezpzthomasquez",
   "type": "module",
   "scripts": {
-    "dev": "react-router dev"
+    "dev": "react-router dev",
+    "build": "react-router build"
   },
   "dependencies": {
     "@react-router/node": "7.9.4",
