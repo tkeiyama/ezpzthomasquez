@@ -23,6 +23,7 @@
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
     "dprint": "0.50.2",
+    "husky": "9.1.7",
     "oxlint": "1.23.0",
     "typescript": "5.9.3",
     "vite": "7.1.11"
