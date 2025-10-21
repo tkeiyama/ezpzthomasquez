@@ -14,7 +14,7 @@
     "prepare": "husky",
     "pre-commit": "lint-staged -c lint-staged.config.js",
     "generate": "pnpm run \"/^generate:.*/\"",
-    "generate:type-css-modules": "tcm app"
+    "generate:type-css-modules": "tcm -p \"app/**/*.module.css\""
   },
   "dependencies": {
     "@react-router/node": "7.9.4",
