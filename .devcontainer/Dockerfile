@@ -4,3 +4,5 @@ RUN apt update -y && \
   apt install -y \
   git \
   curl
+
+COPY ./scripts ./scripts
