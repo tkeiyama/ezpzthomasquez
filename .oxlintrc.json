@@ -150,5 +150,7 @@
     "builtin": true
   },
   "globals": {},
-  "ignorePatterns": []
+  "ignorePatterns": [
+    ".pnpm-store"
+  ]
 }
