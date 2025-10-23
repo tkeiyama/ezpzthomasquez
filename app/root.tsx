@@ -1,4 +1,4 @@
-import { Links } from "react-router";
+import { Links, Outlet } from "react-router";
 import { Route } from "./+types/root";
 import "./styles/global.css";
 import "./styles/primitives.css";
@@ -18,7 +18,7 @@ export default function R() {
         <Links />
       </head>
       <body className={styles.body}>
-        EzPzThomaSquEz
+        <Outlet />
       </body>
     </html>
   );
