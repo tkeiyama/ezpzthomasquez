@@ -1,0 +1,32 @@
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    transform: scale(101%);
+    transition-property: transform;
+    transition-duration: 0.5s;
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.time {
+  margin: 4px 0 0 0;
+  font-size: 0.875rem;
+}
+
+.description {
+  margin: 8px 0 0 0;
+  font-size: 1rem;
+}
