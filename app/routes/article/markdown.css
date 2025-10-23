@@ -1,0 +1,130 @@
+@import url(../../../node_modules/highlight.js/styles/github-dark.min.css);
+
+.markdown {
+  --borderColor-muted: #d1d9e0b3;
+  --font-weight-semibold: 600;
+
+  --size-16: 1rem;
+  --size-24: 1.5rem;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  h1 {
+    margin: 0.67em 0;
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    font-size: 2em;
+    border-bottom: 1px solid #d1d9e0b3;
+  }
+
+  h2 {
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #d1d9e0b3;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 1.25em;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  blockquote {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0 1em;
+    color: #59636e;
+    border-left: 0.25em solid #3d444d;
+  }
+
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 2em;
+  }
+
+  b,
+  strong {
+    font-weight: 600;
+  }
+
+  hr {
+    box-sizing: content-box;
+    overflow: hidden;
+    background: transparent;
+    border-bottom: 1px solid #3d444db3;
+    height: 0.25em;
+    padding: 0;
+    margin: 1.5rem 0;
+    background-color: #3d444d;
+    border: 0;
+  }
+
+  a {
+    background-color: transparent;
+    color: #4493f8;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    border-style: none;
+    max-width: 100%;
+    box-sizing: content-box;
+  }
+
+  pre {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    overflow: auto;
+    font-size: 1em;
+    line-height: 1.45;
+    color: #f0f6fc;
+    background-color: #151b23;
+    border-radius: 6px;
+  }
+
+  pre > code {
+    display: inline;
+    max-width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+  }
+
+  code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 100%;
+    white-space: break-spaces;
+    background-color: #656c7633;
+    border-radius: 6px;
+  }
+}

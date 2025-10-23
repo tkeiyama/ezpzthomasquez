@@ -1,0 +1,18 @@
+.title {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.time {
+  margin: 8px 0 0 0;
+  font-size: 0.875rem;
+}
+
+.description {
+  margin: 4px 0 0 0;
+  font-size: 1rem;
+}
+
+.main {
+  margin: 32px 0 0 0;
+}
