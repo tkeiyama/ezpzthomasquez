@@ -1,5 +1,8 @@
 import { Links } from "react-router";
 import { Route } from "./+types/root";
+import "./styles/global.css";
+import "./styles/primitives.css";
+import styles from "./root.module.css";
 
 export const links: Route.LinksFunction = () => [
   {
@@ -14,7 +17,9 @@ export default function R() {
       <head>
         <Links />
       </head>
-      <body>EzPzThomaSquEz</body>
+      <body className={styles.body}>
+        EzPzThomaSquEz
+      </body>
     </html>
   );
 }
