@@ -5,6 +5,7 @@ import { Route } from "./+types/route";
 import { getArticle } from "./getArticle";
 import styles from "./route.module.css";
 import "./markdown.css";
+import { generateTitle } from "../../libs/generateTitle";
 
 interface Return {
   article: Article;
@@ -26,6 +27,7 @@ export default function R(props: Route.ComponentProps): ReactElement {
 
   return (
     <Layout>
+      <title>{generateTitle(article.title)}</title>
       <article>
         <header>
           <h1 className={styles.title}>{article.title}</h1>
