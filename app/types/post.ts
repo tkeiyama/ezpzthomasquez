@@ -8,6 +8,6 @@ export interface Metadata extends Frontmatter {
   id: string;
 }
 
-export interface Article extends Metadata {
+export interface Post extends Metadata {
   content: string;
 }

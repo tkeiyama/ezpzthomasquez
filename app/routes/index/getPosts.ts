@@ -4,15 +4,15 @@ import remarkParse from "remark-parse";
 import remarkParseFrontmatter from "remark-parse-frontmatter";
 import remarkStringify from "remark-stringify";
 import { unified } from "unified";
-import { ARTICLE_PATH } from "../../const/article.const";
-import { Frontmatter, Metadata } from "../../types/article";
+import { POST_PATH } from "../../const/post.const";
+import { Frontmatter, Metadata } from "../../types/post";
 
 type Return = Metadata[];
 
-export const getArticles = async (): Promise<Return> => {
-  const articleIds = await readdir(`${ARTICLE_PATH}`);
-  const articles: Metadata[] = await Promise.all(articleIds.map(async (articleId): Promise<Metadata> => {
-    const raw = await readFile(`${ARTICLE_PATH}/${articleId}/README.md`, {
+export const getPosts = async (): Promise<Return> => {
+  const postIds = await readdir(`${POST_PATH}`);
+  const posts: Metadata[] = await Promise.all(postIds.map(async (postId): Promise<Metadata> => {
+    const raw = await readFile(`${POST_PATH}/${postId}/README.md`, {
       encoding: "utf-8",
     });
     const file = await unified()
@@ -25,12 +25,12 @@ export const getArticles = async (): Promise<Return> => {
     const frontmatter = file.data.frontmatter as Frontmatter;
 
     return {
-      id: articleId,
+      id: postId,
       title: frontmatter.title,
       description: frontmatter.description,
       date: frontmatter.date,
     } satisfies Metadata;
   }));
 
-  return articles.sort((a, b) => b.date.localeCompare(a.date));
+  return posts.sort((a, b) => b.date.localeCompare(a.date));
 };

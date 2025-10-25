@@ -6,19 +6,19 @@ import remarkParse from "remark-parse";
 import remarkParseFrontmatter from "remark-parse-frontmatter";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
-import { ARTICLE_PATH } from "../../const/article.const";
+import { POST_PATH } from "../../const/post.const";
 import { formatDate } from "../../libs/formatDate";
-import { Article, Frontmatter } from "../../types/article";
+import { Frontmatter, Post } from "../../types/post";
 
 interface Params {
   id: string;
 }
 
-type Return = Article;
+type Return = Post;
 
-export const getArticle = async (params: Params): Promise<Return> => {
+export const getPost = async (params: Params): Promise<Return> => {
   const id = params.id;
-  const raw = await readFile(`${ARTICLE_PATH}/${id}/README.md`, {
+  const raw = await readFile(`${POST_PATH}/${id}/README.md`, {
     encoding: "utf-8",
   });
   const file = await unified()
@@ -31,7 +31,7 @@ export const getArticle = async (params: Params): Promise<Return> => {
     .process(raw);
 
   const frontmatter = file.data.frontmatter as Frontmatter;
-  const content = file.value as Article["content"];
+  const content = file.value as Post["content"];
 
   return {
     id,

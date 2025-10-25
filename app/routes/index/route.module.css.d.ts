@@ -1,7 +1,7 @@
 declare const styles: {
-  readonly "articles": string;
   readonly "description": string;
   readonly "link": string;
+  readonly "posts": string;
   readonly "time": string;
   readonly "title": string;
 };

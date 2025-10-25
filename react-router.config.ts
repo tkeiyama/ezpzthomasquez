@@ -6,8 +6,8 @@ export default {
   ssr: true,
   prerender: async ({ getStaticPaths }) => {
     const staticPaths = getStaticPaths();
-    const articleNames = await readdir(`${process.cwd()}/articles`);
-    const dynamicPaths = articleNames.map((articleName) => `/articles/${articleName}`);
+    const postNames = await readdir(`${process.cwd()}/posts`);
+    const dynamicPaths = postNames.map((postName) => `/posts/${postName}`);
     return [...staticPaths, ...dynamicPaths];
   },
 } satisfies Config;

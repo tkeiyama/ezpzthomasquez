@@ -2,38 +2,38 @@ import { ReactElement } from "react";
 import { Link } from "react-router";
 import { Layout } from "../../components/layout";
 import { generateTitle } from "../../libs/generateTitle";
-import { Metadata } from "../../types/article";
+import { Metadata } from "../../types/post";
 import { Route } from "./+types/route";
-import { formatArticles } from "./formatArticles";
-import { getArticles } from "./getArticles";
+import { formatPosts } from "./formatPosts";
+import { getPosts } from "./getPosts";
 import styles from "./route.module.css";
 
 interface Return {
-  articles: Metadata[];
+  posts: Metadata[];
 }
 
 export const loader = async (): Promise<Return> => {
-  const articles = formatArticles(await getArticles());
+  const posts = formatPosts(await getPosts());
 
   return {
-    articles,
+    posts,
   };
 };
 
 export default function R(props: Route.ComponentProps): ReactElement {
   const loaderData = props.loaderData;
-  const articles = loaderData.articles;
+  const posts = loaderData.posts;
 
   return (
     <Layout isHome>
       <title>{generateTitle()}</title>
-      <div className={styles.articles}>
-        {articles.map((article) => (
-          <Link key={article.id} className={styles.link} to={`/articles/${article.id}`}>
+      <div className={styles.posts}>
+        {posts.map((post) => (
+          <Link key={post.id} className={styles.link} to={`/posts/${post.id}`}>
             <article>
-              <h3 className={styles.title}>{article.title}</h3>
-              <time className={styles.time}>{article.date}</time>
-              <p className={styles.description}>{article.description}</p>
+              <h3 className={styles.title}>{post.title}</h3>
+              <time className={styles.time}>{post.date}</time>
+              <p className={styles.description}>{post.description}</p>
             </article>
           </Link>
         ))}
