@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 import { Link } from "react-router";
 import { Layout } from "../../components/layout";
+import { generateTitle } from "../../libs/generateTitle";
 import { Metadata } from "../../types/article";
 import { Route } from "./+types/route";
 import { formatArticles } from "./formatArticles";
@@ -25,6 +26,7 @@ export default function R(props: Route.ComponentProps): ReactElement {
 
   return (
     <Layout isHome>
+      <title>{generateTitle()}</title>
       <div className={styles.articles}>
         {articles.map((article) => (
           <Link key={article.id} className={styles.link} to={`/articles/${article.id}`}>
