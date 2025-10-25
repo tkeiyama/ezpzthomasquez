@@ -24,9 +24,11 @@ export default function R(props: Route.ComponentProps): ReactElement {
   const loaderData = props.loaderData;
   const posts = loaderData.posts;
 
+  const pageTitle = generateTitle();
+
   return (
     <Layout isHome>
-      <title>{generateTitle()}</title>
+      <title>{pageTitle}</title>
       <div className={styles.posts}>
         {posts.map((post) => (
           <Link key={post.id} className={styles.link} to={`/posts/${post.id}`}>

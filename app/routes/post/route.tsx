@@ -25,9 +25,11 @@ export default function R(props: Route.ComponentProps): ReactElement {
   const loaderData = props.loaderData;
   const post = loaderData.post;
 
+  const pageTitle = generateTitle(post.title);
+
   return (
     <Layout>
-      <title>{generateTitle(post.title)}</title>
+      <title>{pageTitle}</title>
       <article>
         <header>
           <h1 className={styles.title}>{post.title}</h1>
