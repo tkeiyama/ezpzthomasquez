@@ -11,3 +11,6 @@ RUN sh ./scripts/install-nodejs.sh
 ENV PATH=$PATH:/usr/local/nodejs/bin
 
 RUN sh ./scripts/install-pnpm.sh
+
+RUN sh ./scripts/install-claude-code.sh
+ENV PATH=$PATH:~/.local/bin
