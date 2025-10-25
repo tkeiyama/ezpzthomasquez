@@ -7,7 +7,7 @@ import styles from "./root.module.css";
 export const links: Route.LinksFunction = () => [
   {
     rel: "icon",
-    href: "/favicon.ico",
+    href: import.meta.env.PROD ? "/ezpzthomasquez/favicon.ico" : "/favicon.ico",
   },
 ];
 
