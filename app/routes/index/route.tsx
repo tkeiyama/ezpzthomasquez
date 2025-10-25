@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 import { Link } from "react-router";
 import { Layout } from "../../components/layout";
+import { XCard } from "../../components/x-card/x-card";
 import { generateTitle } from "../../libs/generateTitle";
 import { Metadata } from "../../types/post";
 import { Route } from "./+types/route";
@@ -29,6 +30,7 @@ export default function R(props: Route.ComponentProps): ReactElement {
   return (
     <Layout isHome>
       <title>{pageTitle}</title>
+      <XCard card="summary" title={pageTitle} />
       <div className={styles.posts}>
         {posts.map((post) => (
           <Link key={post.id} className={styles.link} to={`/posts/${post.id}`}>

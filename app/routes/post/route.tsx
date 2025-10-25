@@ -5,6 +5,7 @@ import { Route } from "./+types/route";
 import { getPost } from "./getPost";
 import styles from "./route.module.css";
 import "./markdown.css";
+import { XCard } from "../../components/x-card/x-card";
 import { generateTitle } from "../../libs/generateTitle";
 
 interface Return {
@@ -30,6 +31,7 @@ export default function R(props: Route.ComponentProps): ReactElement {
   return (
     <Layout>
       <title>{pageTitle}</title>
+      <XCard card="summary" title={pageTitle} description={post.description} />
       <article>
         <header>
           <h1 className={styles.title}>{post.title}</h1>
