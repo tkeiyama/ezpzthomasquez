@@ -30,6 +30,10 @@ Here is what I did for it. I set:
 
 I didn't set `twitter:image` for now because I don't plan to add images for posts.
 
+## How the X Card looks like
+
+![](posts/x-card/x-card.png)
+
 ## Reference
 
 - [About X Cards](https://developer.x.com/en/docs/x-for-websites/cards/overview/abouts-cards)
