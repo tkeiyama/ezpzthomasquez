@@ -3,6 +3,16 @@ name: deploy
 on:
   push:
     branches: ["main"]
+    paths:
+      - "app/**"
+      - "posts/**"
+      - "public/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "react-router.config.ts"
+      - "vite.build.config.ts"
+      - "tsconfig.json"
+      - ".github/workflows/deploy.yml"
 
 permissions:
   contents: read
