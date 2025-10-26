@@ -32,7 +32,7 @@ I didn't set `twitter:image` for now because I don't plan to add images for post
 
 ## How the X Card looks like
 
-![](posts/x-card/x-card.png)
+![x-card](posts/x-card/x-card.png)
 
 ## Reference
 
