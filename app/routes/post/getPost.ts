@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import rehypeHighlight from "rehype-highlight";
 import rehypeStringify from "rehype-stringify";
+import remarkEmbedImages from "remark-embed-images";
 import remarkFrontmatter from "remark-frontmatter";
 import remarkParse from "remark-parse";
 import remarkParseFrontmatter from "remark-parse-frontmatter";
@@ -23,6 +24,7 @@ export const getPost = async (params: Params): Promise<Return> => {
   });
   const file = await unified()
     .use(remarkParse)
+    .use(remarkEmbedImages)
     .use(remarkFrontmatter)
     .use(remarkParseFrontmatter)
     .use(remarkRehype)
