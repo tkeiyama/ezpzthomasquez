@@ -1,0 +1,8 @@
+name: ezpzthomasquez
+
+services:
+  workspace:
+    build: .
+    volumes:
+      - ..:/workspace
+    tty: true
