@@ -1,0 +1,4 @@
+name = "ezpzthomasquez"
+
+[assets]
+directory = "./public/"
